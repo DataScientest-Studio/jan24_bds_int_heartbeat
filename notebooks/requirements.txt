@@ -1,0 +1,5 @@
+This file should contain the requirements for all notebooks.
+pip freeze is not working correctly
+pipreq is not working correctly (since we use jupyter notebooks)
+pipreqsnb is not working correctly (since it detectgs % sign as syntax error although the code works properly)
+--> We may have to do the requirements.txt by hand...
