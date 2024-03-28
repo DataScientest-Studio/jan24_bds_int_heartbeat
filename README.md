@@ -6,7 +6,7 @@ Heartbeat Classification
 3. Hakan Dogan
 
 ## What is the project about?
-In this project several approaches to examine and correctly predict ecg heartbeat patterns and heartbeat pattern abnormalities were implemented in the form of either simple Machine Learning Models or neural networks in different configurations. We can show that even with simple Models, high accuracy scores on predicting either the class of the overall heartbeat pattern shape or the binary distinction between an normal or abnormal heartbeat pattern shape are possible. With Neural Networks we achieve marginally higher accuracy scores, but observe an trend in "conservativeness", i.e. the model tends to choose more false positive sick individuals than with the simple models. In the medical field this is a desired behavior. Based on these initial findings, further studies can be conducted to exmine this distinct behavior of neural networks in the field of detecting ecg heartbeat patterns.
+In this project, several approaches to examine and correctly predict the ECG heartbeat patterns and abnormalities were implemented in the form of either simple Machine Learning Models or neural networks in different configurations. The work is based on the Kaggle ECG Hearbeat Categorization Dataset. We can show that, even with simple Models, high accuracy scores on predicting either the class of the overall heartbeat pattern shape or the binary distinction between a normal or abnormal heartbeat pattern shape are possible. With Neural Networks, we achieve marginally higher accuracy scores, but observe a trend in "conservativeness", i.e. the model tends to choose more false positive sick individuals than with the simple models. In the medical field this is a desired behavior. Based on these initial findings, further studies can be conducted to examine this distinct behavior of neural networks in the field of detecting ECG heartbeat patterns.
 
 
 Project Organization on Github
@@ -41,7 +41,7 @@ Project Organization on Github
 
 
 ## How to use the Github repo / the notebooks
-All code is stored in jupyter notebooks. The notebooks contain code to directly download the necessary datasets via the KaggleAPI. This code is more or less bulletproof, but it could be necessary, that one either authentificates via a webbrowser or changes the source code to make the authentification on Kaggle working. Since the datasets are quite big, they are stored in the data folder, which is created on the first run of any of the notebooks. This data folder is available only on the local machine and will not be pushed onto github.
+All code is stored in Jupyter notebooks. The notebooks contain code to directly download the necessary datasets via the KaggleAPI. This code is more or less bulletproof, but it could be necessary that one either authenticates via a webbrowser or changes the source code to make the authentification work on Kaggle. Since the datasets are quite big, they are stored in the data folder, which is created on the first run of any of the notebooks. This data is available only on the local machine and is not pushed onto github.
 
 After initlally downloading the datasets, the notebooks all follow the same path.
 
