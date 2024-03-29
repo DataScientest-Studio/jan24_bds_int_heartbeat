@@ -6,7 +6,7 @@ Heartbeat Classification
 3. Hakan Dogan
 
 ## What is the project about?
-In this project several approaches to examine and correctly predict ecg heartbeat patterns and heartbeat pattern abnormalities were implemented in the form of either simple Machine Learning Models or neural networks in different configurations. We can show that even with simple Models, high accuracy scores on predicting either the class of the overall heartbeat pattern shape or the binary distinction between an normal or abnormal heartbeat pattern shape are possible. With Neural Networks we achieve marginally higher accuracy scores, but observe an trend in "conservativeness", i.e. the model tends to choose more false positive sick individuals than with the simple models. In the medical field this is a desired behavior. Based on these initial findings, further studies can be conducted to exmine this distinct behavior of neural networks in the field of detecting ecg heartbeat patterns.
+In this project, several approaches to examine and correctly predict the ECG heartbeat patterns and abnormalities were implemented in the form of either simple Machine Learning Models or neural networks in different configurations. The work is based on the Kaggle ECG Hearbeat Categorization Dataset. We can show that, even with simple Models, high accuracy scores on predicting either the class of the overall heartbeat pattern shape or the binary distinction between a normal or abnormal heartbeat pattern shape are possible. With Neural Networks, we achieve marginally higher accuracy scores, but observe a trend in "conservativeness", i.e. the model tends to choose more false positive sick individuals than with the simple models. In the medical field this is a desired behavior. Based on these initial findings, further studies can be conducted to examine this distinct behavior of neural networks in the field of detecting ECG heartbeat patterns.
 
 
 Project Organization on Github
@@ -41,7 +41,7 @@ Project Organization on Github
 
 
 ## How to use the Github repo / the notebooks
-All code is stored in jupyter notebooks. The notebooks contain code to directly download the necessary datasets via the KaggleAPI. This code is more or less bulletproof, but it could be necessary, that one either authentificates via a webbrowser or changes the source code to make the authentification on Kaggle working. Since the datasets are quite big, they are stored in the data folder, which is created on the first run of any of the notebooks. This data folder is available only on the local machine and will not be pushed onto github.
+All code is stored in Jupyter notebooks. The notebooks contain code to directly download the necessary datasets via the KaggleAPI. This code is more or less bulletproof, but it could be necessary that one either authenticates via a webbrowser or changes the source code to make the authentification work on Kaggle. Since the datasets are quite big, they are stored in the data folder, which is created on the first run of any of the notebooks. This data is available only on the local machine and is not pushed onto github.
 
 After initlally downloading the datasets, the notebooks all follow the same path.
 
@@ -49,7 +49,7 @@ After initlally downloading the datasets, the notebooks all follow the same path
 In this notebook we show how the initial checks for data quality are performed. We produce many plots to observe the data structure. We also try out some data resampling techniques that are used in later notebooks. All plots are stored in the figures folder. Inside the figures folder, we store the datavizualization plots in a subfolder called viz_plots. This notebook is also used to generate the result plots for our reports. We therefore manually concated our final results into .csv files. These result files are stored in notebooks/result_csv_files. Notebook 1 uses those .csv files to generate the result plots, which are then stored in the figures/result_plots folder.
 
 2. Notebook 2a / 2b: These are the notebooks for the simple machine learning models. 2a refers to the MITBIH Dataset, 2b to the PTBDB Dataset. First, if not already happened, the Datasets are downloaded from Kaggle. Then the necessary datasets for each notebook are loaded, in case of PTBDB the reshuffling from Notebook 1 is performed.
-We use switches for the configuration of the dataset sampling and to decide, which of the models shall be trained and evaluated. After deciding on the options, the selected models are trained with the configured dataset. A function to save the model (.pkl) and the classification report is always called after each successfull model training. In each of these notebooks, 5 simple ML Models are trained and evaluated:
+We use switches for the configuration of the dataset sampling and to decide, which of the models shall be trained and evaluated. After deciding on the options, the selected models are trained with the configured dataset. A function to save the model (.pkl) and the classification report is always called after each successfull model training. In each of these notebooks, 5 conventional ML Models are trained and evaluated:
     1. Support Vector Machine (SVM)
     2. K-Nearest Neighbor (KNN)
     3. Decision Tree Classifier (DTC)
